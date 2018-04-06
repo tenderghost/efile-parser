@@ -7,9 +7,9 @@ import java.io.StringWriter;
 /**
  * Basic data organization unit in E language <br/>
  * 
- * <ÀàÃû::ÊµÌåÃû>
+ * <ç±»å::å®žä½“å>
  * 
- * </ÀàÃû::ÊµÌåÃû>
+ * </ç±»å::å®žä½“å>
  * 
  * @author LENOVO
  *

@@ -13,10 +13,10 @@ public class ELangDataSectionTable {
 	
 	/**
 	 * Default constructor.
-	 * <b>NOTE:<b> this default constructor will add the first column "ĞòºÅ" by default as it's so common.
+	 * <b>NOTE:<b> this default constructor will add the first column "åºå·" by default as it's so common.
 	 */
 	public ELangDataSectionTable() {
-		appendColumn("ĞòºÅ");
+		appendColumn("åºå·");
 	}
 	
 	/**
@@ -57,7 +57,7 @@ public class ELangDataSectionTable {
 		BufferedWriter bw = new BufferedWriter(sw);
 		
 		try {
-			// Write Columns, eg. @ ĞòºÅ ÊôĞÔÃû1 ÊôĞÔÃû2 ÊôĞÔÃû3
+			// Write Columns, eg. @ åºå· å±æ€§å1 å±æ€§å2 å±æ€§å3
 			bw.write("@ ");
 			for (String columnName: columnNames) {
 				bw.write(columnName);
@@ -90,15 +90,15 @@ public class ELangDataSectionTable {
 
 	public static void main(String[] args) {
 		ELangDataSectionTable dataTable = new ELangDataSectionTable();
-		dataTable.appendColumn("·¢Áîµ¥Î»");
-		dataTable.appendColumn("·¢ÁîÊ±¼ä");
-		dataTable.appendColumn("·¢ÁîÈË");
+		dataTable.appendColumn("å‘ä»¤å•ä½");
+		dataTable.appendColumn("å‘ä»¤æ—¶é—´");
+		dataTable.appendColumn("å‘ä»¤äºº");
 		
 		ELangDataRow dataRow = dataTable.createRow();
-		dataRow.setValue("ĞòºÅ", "1");
-		dataRow.setValue("·¢Áîµ¥Î»", "µ¥Î»1");
-		dataRow.setValue("·¢ÁîÊ±¼ä", "2018-03-21");
-		dataRow.setValue("·¢ÁîÈË", "ÕÅÈı");
+		dataRow.setValue("åºå·", "1");
+		dataRow.setValue("å‘ä»¤å•ä½", "å•ä½1");
+		dataRow.setValue("å‘ä»¤æ—¶é—´", "2018-03-21");
+		dataRow.setValue("å‘ä»¤äºº", "å¼ ä¸‰");
 		
 		String str = dataTable.toString();
 		System.out.println(str);

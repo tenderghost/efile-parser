@@ -8,8 +8,8 @@ import java.util.List;
 
 /**
  * Represents single column data section, format is:<pre>
- * @ ĞòºÅ ÊôĞÔÃû ÊôĞÔÖµ
- * # 1  ÊôĞÔ1   Öµ1
+ * @ åºå· å±æ€§å å±æ€§å€¼
+ * # 1  å±æ€§1   å€¼1
  * ...
  * </pre>
  * @author LENOVO
@@ -19,9 +19,9 @@ public class ELangDataSectionSingleColumn {
 	private static final String DATA_HEADER_TEMPLATE = "@@ %s %s %s";
 	private static final String DATA_ROW_TEMPLATE = "# %s %s '%s'";
 	
-	private String indexColumnName = "ĞòºÅ";
-	private String keyColumnName   = "ÊôĞÔÃû";
-	private String valueColumnName = "ÊôĞÔÖµ";
+	private String indexColumnName = "åºå·";
+	private String keyColumnName   = "å±æ€§å";
+	private String valueColumnName = "å±æ€§å€¼";
 	
 	private List<KeyValuePair> dataList = new ArrayList<KeyValuePair>();
 	
@@ -70,10 +70,10 @@ public class ELangDataSectionSingleColumn {
 	
 	public static void main(String[] args) {
 		ELangDataSectionSingleColumn sc = new ELangDataSectionSingleColumn();
-		sc.addData("½ÓÊÕµ¥Î»", "ÄÏ¾©¹©µç¹«Ë¾");
-		sc.addData("ÉóºËÈË", "ÕÅÈı");
-		sc.addData("ÉóºËÒâ¼û", "Í¬Òâ");
-		sc.addData("ÉóºË»·½Ú", "ÔË·½×¨Òµ");
+		sc.addData("æ¥æ”¶å•ä½", "å—äº¬ä¾›ç”µå…¬å¸");
+		sc.addData("å®¡æ ¸äºº", "å¼ ä¸‰");
+		sc.addData("å®¡æ ¸æ„è§", "åŒæ„");
+		sc.addData("å®¡æ ¸ç¯èŠ‚", "è¿æ–¹ä¸“ä¸š");
 		
 		System.out.println(sc.toString());
 	}
